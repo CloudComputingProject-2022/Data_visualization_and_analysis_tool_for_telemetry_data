@@ -82,6 +82,7 @@ dataSchema = StructType([
     StructField("Y", FloatType()),
     StructField("LapIdx", ShortType())])
 
+# Subscribe to the kafka topic
 rawDF = spark.readStream.format('kafka')                \
         .option('kafka.bootstrap.servers', kafkaBroker) \
         .option('subscribe', inputTopic)                \
