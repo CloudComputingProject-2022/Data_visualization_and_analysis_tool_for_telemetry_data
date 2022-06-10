@@ -155,10 +155,10 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Andrea Lombardi - [@your_linkedin](https://www.linkedin.com/in/andrea-lombardi/)
-Vincenzo Silvio - [@your_linkedin](https://www.linkedin.com/in/vincenzo-silvio-0413321b8/)
-Ciro Panariello - [@your_linkedin](https://www.linkedin.com/in/ciro-panariello-57044119b/)
-Vincenzo Capone - [@your_linkedin]((https://www.linkedin.com/feed/)
+* Andrea Lombardi - [Linkedin](https://www.linkedin.com/in/andrea-lombardi/)
+* Vincenzo Silvio - [Linkedin](https://www.linkedin.com/in/vincenzo-silvio-0413321b8/)
+* Ciro Panariello - [Linkedin](https://www.linkedin.com/in/ciro-panariello-57044119b/)
+* Vincenzo Capone - [Linkedin]((https://www.linkedin.com/feed/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
