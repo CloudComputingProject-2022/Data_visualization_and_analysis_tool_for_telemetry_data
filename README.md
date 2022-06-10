@@ -123,19 +123,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <!-- ROADMAP -->
 ## Roadmap
+These are some of the features we would like to add to this project.
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+- [x] Add anomaly threshold real-time choice
+- [ ] Multidriver support (this involves kafka topics re-organization)
+- [ ] Add statefulness to streamlit
+    - [ ] Counter variables
+    - [ ] Data dict
+- [ ] Use MLlib into the Spark SS data analysis module
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -155,20 +152,13 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Andrea Lombardi - [@your_linkedin](https://www.linkedin.com/in/andrea-lombardi/)
+Vincenzo Silvio - [@your_linkedin](https://www.linkedin.com/in/vincenzo-silvio-0413321b8/)
+Ciro Panariello - [@your_linkedin](https://www.linkedin.com/in/ciro-panariello-57044119b/)
+Vincenzo Capone - [@your_linkedin]((https://www.linkedin.com/feed/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
