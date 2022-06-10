@@ -15,7 +15,7 @@ An naive anomaly detection and data visualization tool for F1 on board telemetry
 
   <p align="center">
     <br />
-    <a href="https://github.com/CloudComputingProject-2022/Anomalyx-Data_visualization_and_anomaly_detection_tool_for_telemetry_data/demo_video.mp3">View Demo</a>
+    <a href="anomalyx_demo.gif">View Demo</a>
     ·
     <a href="https://github.com/CloudComputingProject-2022/Anomalyx-Data_visualization_and_anomaly_detection_tool_for_telemetry_data/issues">Report Bug</a>
   </p>
