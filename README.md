@@ -1,5 +1,5 @@
-# Anomalyx - Cloud-based anomaly detectin and visualization tool for telemetry data
-An naive anomaly detection and data visualization tool for F1 on board telemetry data.
+# Cloud-based data visualization and analysis tool for telemetry data
+An naive data visualization and analysis tool for F1 on board telemetry data.
 
 <div id="top"></div>
 
