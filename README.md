@@ -11,13 +11,13 @@ An naive data visualization and analysis tool for F1 on board telemetry data.
     <img src="client/img/logo_large.png" alt="Logo">
   </a>
 
-  <h3 align="center">Cloud-based anomaly detectin and visualization tool for telemetry data</h3>
+  <h3 align="center">Cloud-based data visualization and analysis tool for telemetry data</h3>
 
   <p align="center">
     <br />
     <a href="anomalyx_demo.gif">View Demo</a>
     ·
-    <a href="https://github.com/CloudComputingProject-2022/Anomalyx-Data_visualization_and_anomaly_detection_tool_for_telemetry_data/issues">Report Bug</a>
+    <a href="issues">Report Bug</a>
   </p>
 </div>
 
@@ -44,7 +44,7 @@ An naive data visualization and analysis tool for F1 on board telemetry data.
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contacts">Contacts</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
@@ -61,14 +61,14 @@ This work proposes a possible baseline architecture to implement a data visualiz
 
 This section lists any major frameworks/libraries used in this project.
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+Data source and front-end:
+* [FastF1](https://github.com/theOehrly/Fast-F1)
+* [Streamlit](https://streamlit.io/)
+
+Back-end Apache services:
+* [ZooKeeper](https://zookeeper.apache.org/)
+* [Kafka](https://kafka.apache.org/) - [KafkaPython](https://github.com/dpkp/kafka-python)
+* [Spark](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html) - [PySpark](https://github.com/apache/spark)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -151,14 +151,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- CONTACT -->
-## Contact
+## Contacts
 
 * Andrea Lombardi - [Linkedin](https://www.linkedin.com/in/andrea-lombardi/)
 * Vincenzo Silvio - [Linkedin](https://www.linkedin.com/in/vincenzo-silvio-0413321b8/)
 * Ciro Panariello - [Linkedin](https://www.linkedin.com/in/ciro-panariello-57044119b/)
-* Vincenzo Capone - [Linkedin]((https://www.linkedin.com/feed/)
+* Vincenzo Capone - [Linkedin](https://www.linkedin.com/feed/)
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -168,17 +167,15 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+This space lists all the helpful resources we would like to give credit to.
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Thanks to O'Reilly books about:
+* [ZooKeeper](https://www.oreilly.com/library/view/zookeeper/9781449361297/)
+* [Kafka](https://www.oreilly.com/library/view/kafka-the-definitive/9781492043072/)
+* [Spark](https://www.oreilly.com/library/view/spark-the-definitive/9781491912201/)
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Infrastructure-as-a-Service used for this project:
+* [Google Cloud Dataproc](https://cloud.google.com/dataproc)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
