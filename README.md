@@ -77,34 +77,43 @@ Back-end Apache services:
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get your system up and running, follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+First, you need to have an account on any cloud platform from which you can access cluster services. In our case, we used Google Cloud Dataproc clusters, but any other cloud provider should do.
+
+Following the next section, this is the architecture you will end up with.
+
+<p align="center" width="100%">
+    <img width="60%" src="figs/system_architecture.PNG"> 
+</p>
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Make sure to have two clusters on which you can deploy the following technologies:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+1. Apache ZooKeeper (v. 3.7.1) and Apache Kafka (v. 3.1.0) on one cluster.
+2. Apache Spark (v. 3.1.2) on the other cluster.
+
+* ZooKeeper is required in order to run Kafka. The following example shows how to properly setup on each cluster node the ```zoo.cfg``` file in the ```conf``` directory under the ZooKeeper home, to run a ZooKeeper ensemble over a three-nodes cluster:
+  ```
+  ticktime=2000
+  dataDir=/var/lib/zookeeper
+  clientPort=2181
+  initLimit=20
+  syncLimit=5
+  server.1=hostnameA:2888:3888
+  server.2=hostnameB:2888:3888
+  server.3=hostnameC:2888:3888
+  ```
+* On each cluster node, the following key properties must be specified in the ```server.properties``` file, located in the ```config``` directory under the Kafka home.
+  * ```broker.id=UID``` (where UID is a unique ID for this broker).
+  * ```listeners=PLAINTEXT://internalIP:9092```
+  * ```advertised.listeners=PLAINTEXT://externalIP:9092```
+  * ```zookeeper.connect=hostnameA:2181,hostnameB:2181,hostnameC:2181/kafka_root_znode```
+
+* If you're using Google Cloud Dataproc clusters, you don't need to manually install and configure Spark as it is already included.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
