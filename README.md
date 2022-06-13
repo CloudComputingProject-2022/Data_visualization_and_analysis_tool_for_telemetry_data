@@ -15,7 +15,7 @@ An naive data visualization and analysis tool for F1 on board telemetry data.
 
   <p align="center">
     <br />
-    <a href="anomalyx_demo.gif">View Demo</a>
+    <a href="figs/anomalyx_demo.gif">View Demo</a>
     ·
     <a href="issues">Report Bug</a>
   </p>
@@ -55,15 +55,21 @@ An naive data visualization and analysis tool for F1 on board telemetry data.
 ## About The Project
 In both minor motorsport categories and racing e-sports there seems to be no easily accessible tool to collect, visualize and analyze live telemetry data. The user often has to perform complex installation tasks to run these tools on his own machine, which might not be powerful enough to handle real-time data stream analysis. 
 
-This work proposes a possible baseline architecture to implement a data visualization and analysis tool for on-board telemetry data, completely based on cloud technologies and distributed systems. The proposed system falls under the Software-as-a-Service (SaaS) paradigm and relies on Infrastructure-as-a-Service (IaaS) cloud solutions to provide hardware support to its software components.
+This work proposes a possible **baseline architecture to implement a data visualization and analysis tool for on-board telemetry data**, completely based on cloud technologies and distributed systems. The proposed system falls under the Software-as-a-Service (SaaS) paradigm and relies on Infrastructure-as-a-Service (IaaS) cloud solutions to provide hardware support to its software components.
+
+<p align="center" width="100%">
+    <img width="60%" src="figs/anomalyx_demo.gif"> 
+</p>
+
+_For more info, please refer to the [Project report](/project_report_paper.pdf)_
 
 ### Built With
 
 This section lists any major frameworks/libraries used in this project.
 
 Data source and front-end:
-* [FastF1](https://github.com/theOehrly/Fast-F1)
-* [Streamlit](https://streamlit.io/)
+* [FastF1](https://github.com/theOehrly/Fast-F1) (v. 2.2.8)
+* [Streamlit](https://streamlit.io/) (v. 1.9.0)
 
 Back-end Apache services:
 * [ZooKeeper](https://zookeeper.apache.org/)
@@ -81,7 +87,7 @@ To get your system up and running, follow these simple steps.
 
 ### Prerequisites
 
-First, you need to have an account on any cloud platform from which you can access cluster services. In our case, we used Google Cloud Dataproc clusters, but any other cloud provider should do.
+First, you need to have an **account on any cloud platform** from which you can access **cluster services**. In our case, we used Google Cloud Dataproc clusters, but any other cloud provider should do.
 
 Following the next section, this is the architecture you will end up with.
 
@@ -113,10 +119,9 @@ Make sure to have two clusters on which you can deploy the following technologie
   * ```advertised.listeners=PLAINTEXT://externalIP:9092```
   * ```zookeeper.connect=hostnameA:2181,hostnameB:2181,hostnameC:2181/kafka_root_znode```
 
-* If you're using Google Cloud Dataproc clusters, you don't need to manually install and configure Spark as it is already included.
+* If you're using Google Cloud Dataproc clusters, you don't need to manually install and configure Spark as it is already included in the cluster's VM image.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -125,15 +130,19 @@ Before launching the streamlit client, make sure that:
 
 * Both Kafka and Spark clusters are up and running.
 * Specify the correct broker IPs and topic names in configuration.ini.
-* The data source is active and publishing on the correct Kafka topic.
+* The data source is active and publishing on the correct Kafka topic. For test purposes, you could run the data stream producer process provided in this repo:
+  ```sh
+  python ./datastream_producer.py
+  ```
+* Start the Spark streaming analysis script on the spark cluster:
+  ```sh
+  spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 ./structured_stream_process.py
+  ```
 
-Finally, to run the client execute:
-
+Finally, you are ready to run the client:
 ```sh
 streamlit run ./main.py
 ```
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -159,12 +168,6 @@ Contributions are what make the open source community such an amazing place to l
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 Don't forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -175,10 +178,7 @@ Don't forget to give the project a star! Thanks again!
 * Ciro Panariello - [Linkedin](https://www.linkedin.com/in/ciro-panariello-57044119b/)
 * Vincenzo Capone - [Linkedin](https://www.linkedin.com/feed/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
