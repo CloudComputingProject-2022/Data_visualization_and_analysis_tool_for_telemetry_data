@@ -80,7 +80,7 @@ Back-end Apache services:
 
 
 
-<!-- GETTING STARTED -->
+<!--- GETTING STARTED --->
 ## Getting Started
 
 To get your system up and running, follow these simple steps.
