@@ -61,7 +61,7 @@ This work proposes a possible **baseline architecture to implement a data visual
     <img width="60%" src="figs/anomalyx_demo.gif"> 
 </p>
 
-_For more info, please refer to the [Project report](/project_report_paper.pdf)_
+_For more info, please refer to the [Project report](/project_report_paper.pdf)_.
 
 ### Built With
 
@@ -194,8 +194,6 @@ Infrastructure-as-a-Service used for this project:
 * [Google Cloud Dataproc](https://cloud.google.com/dataproc)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
