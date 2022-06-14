@@ -16,8 +16,6 @@ An naive data visualization and analysis tool for F1 on board telemetry data.
   <p align="center">
     <br />
     <a href="figs/anomalyx_demo.gif">View Demo</a>
-    ·
-    <a href="issues">Report Bug</a>
   </p>
 </div>
 
