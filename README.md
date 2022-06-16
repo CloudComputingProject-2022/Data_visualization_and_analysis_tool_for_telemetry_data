@@ -56,7 +56,7 @@ In both minor motorsport categories and racing e-sports there seems to be no eas
 This work proposes a possible **baseline architecture to implement a data visualization and analysis tool for on-board telemetry data**, completely based on cloud technologies and distributed systems. The proposed system falls under the Software-as-a-Service (SaaS) paradigm and relies on Infrastructure-as-a-Service (IaaS) cloud solutions to provide hardware support to its software components.
 
 <p align="center" width="100%">
-    <img width="60%" src="figs/anomalyx_demo.gif"> 
+    <img width="70%" src="figs/anomalyx_demo.gif"> 
 </p>
 
 _For more info, please refer to the [Project report](/project_report_paper.pdf)_.
@@ -90,7 +90,7 @@ First, you need to have an **account on any cloud platform** from which you can 
 Following the next section, this is the architecture you will end up with.
 
 <p align="center" width="100%">
-    <img width="60%" src="figs/system_architecture.PNG"> 
+    <img width="70%" src="figs/system_architecture.PNG"> 
 </p>
 
 ### Installation
