@@ -134,7 +134,7 @@ Before launching the streamlit client, make sure that:
   ```
 * Start the Spark streaming analysis script on the spark cluster:
   ```sh
-  spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 ./structured_stream_process.py
+  spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.2 ./structured_stream_process.py --broker <IP:port> --intopic <topicName> --outtopic <topicName>
   ```
 
 Finally, you are ready to run the client:
