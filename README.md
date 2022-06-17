@@ -1,5 +1,5 @@
 # Cloud-based data visualization and analysis tool for telemetry data
-An naive data visualization and analysis tool for F1 on board telemetry data.
+A naive data visualization and analysis tool for F1 on board telemetry data.
 
 <div id="top"></div>
 
@@ -63,7 +63,7 @@ _For more info, please refer to the [Project report](/project_report_paper.pdf)_
 
 ### Built With
 
-This section lists any major frameworks/libraries used in this project.
+This section lists all major frameworks/libraries used in this project.
 
 Data source and front-end:
 * [FastF1](https://github.com/theOehrly/Fast-F1) (v. 2.2.8)
@@ -85,7 +85,7 @@ To get your system up and running, follow these simple steps.
 
 ### Prerequisites
 
-First, you need to have an **account on any cloud platform** from which you can access **cluster services**. In our case, we used Google Cloud Dataproc clusters, but any other cloud provider should do.
+First, you need to have an **account on any cloud platform** from which you can access **cluster services**. We used Google Cloud Dataproc clusters, but any other cloud provider should do.
 
 Following the next section, this is the architecture you will end up with.
 
@@ -127,7 +127,7 @@ Make sure to have two clusters on which you can deploy the following technologie
 Before launching the streamlit client, make sure that:
 
 * Both Kafka and Spark clusters are up and running.
-* Specify the correct broker IPs and topic names in configuration.ini.
+* Specify the correct broker IPs and topic names in ```configuration.ini```.
 * The data source is active and publishing on the correct Kafka topic. For test purposes, you could run the data stream producer process provided in this repo:
   ```sh
   python ./datastream_producer.py
@@ -181,7 +181,6 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-This space lists all the helpful resources we would like to give credit to.
 
 Thanks to O'Reilly books about:
 * [ZooKeeper](https://www.oreilly.com/library/view/zookeeper/9781449361297/)
